@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>قالب مدیریت ادمین - دکه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../inc/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css'>
+    <link href=
+    "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+              rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between">
+            <nav class="nav-side-menu mt-2 col-12 col-lg-3">
+                <div class="brand">
+                    
+                <a href="../index.html"><img class="mb-2 d-none d-xl-block h-25  shadow-sm w-100" src="../inc/img/logosm.png" alt="" srcset=""></a>
+  
+                    <div class="adminprofile shadow-sm p-md-3 mb-md-5  p-0 mb-0 bg-white rounded ">
+                        <div class="adminavatar d-flex justify-content-start align-items-start m-auto w-100">
+                            <div class="avatartag m-1 text-center d-flex flex-column">
+                                <img class="w-100 h-100 rounded-4" src="../inc/img/avatar.png" alt="" srcset="">
+                                <p class="admincolortext bg-info rounded-3 text-white">ادمین</p>
+                            </div>
+                            <div class="d-flex flex-column h-100 align-items-end justify-content-center">
+
+                                <div class=" d-flex justify-content-center  align-items-center">
+                                    <p class="p-0 m-1 fs-6">رسول قاسمی
+
+                                    </p>
+
+                                    <i class="fas  fa-check-circle text-primary bluetick"></i>
+                                </div>
+                                <p dir="ltr" class="m-1  d-none d-md-block"> @oo11boy</p>
+                            </div>
+                        </div>
+                        <div class="fastsetting p-2 w-100 d-flex flex-row justify-content-between align-items-center">
+                            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fas fa-sun"></i>
+                                <div class="form-check m-1 form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-2x toggle-btn" data-bs-toggle="collapse" data-bs-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li class="activeitem">
+                            <a href="../index.html">
+                                <i class="fas fa-fw fa-tachometer-alt"></i>داشبورد
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#service" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-table"></i>نوشته ها
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="../pages/detailpage.html">همه نوشته ها</a></li>
+                                <li><a href="../pages/addeditform.html"> افزودن نوشته جدید</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#new" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-users"></i>محصولات  <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="new">
+                               <li><a href="../pages/detailpage.html">همه محصولات</a></li>
+                                <li><a href="../pages/addeditform.html">افزودن محصول جدید</a></li>
+
+                               
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="../pages/objects.html">
+                                <i class="fas fa-fw fa-gift"></i>عناصر رابط کاربری
+                                
+                       
+                        </li>
+                        <li>
+                            <a href="../pages/formslogin.html">
+                                <i class="fas fa-fw fa-calendar-alt"></i>انواع فرم ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-user"></i>پروفایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/detailpage.html">
+                                <i class="fas fa-fw fa-users"></i>انواع تیبل ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-cogs"></i>تنظیمات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+          </nav>
+            
+          
+            
+            <div class="col-12 col-md-3 fakenav d-none d-lg-flex"></div>
+            <div class="content col-12 col-xl-9">
+
+                <div class="row  mb-3  col-12 d-flex justify-content-between ">
+                    <div class=" col-12 col-md-6 mb-2 datenow ">
+                        <p>1402/3/21</p>
+                        <p>یکشنبه 21 خرداد 1402</p>
+                    </div>
+
+                    <form action="" class="col-12 col-md-6">
+                        <input class="w-100  rounded-2 border border-opacity-50 p-1" type="search" placeholder="جستجو">
+                    </form>
+                </div>
+
+                     <div class="titletools my-3">
+                        <p class="alert alert-primary">شما میتوانید از امکانات زیر برای شخصی سازی این پنل استفاده کنید:</p>
+                     </div>
+
+                <p class="p-2 mt-5 mb-1 btn btn-primary">نمونه تیبل 1</p>
+                
+<div dir="rtl" class="relative overflow-x-auto p-2 shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        
+<tr>
+    <th scope="col" class="p-4">
+        <div class="flex items-center">
+            <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checkbox-all-search" class="sr-only">چک‌باکس</label>
+        </div>
+    </th>
+    <th scope="col" class="px-6 py-3">
+        نام محصول
+    </th>
+    <th scope="col" class="px-6 py-3">
+        رنگ
+    </th>
+    <th scope="col" class="px-6 py-3">
+        دسته بندی
+    </th>
+    <th scope="col" class="px-6 py-3">
+        لوازم جانبی
+    </th>
+    <th scope="col" class="px-6 py-3">
+        موجود
+    </th>
+    <th scope="col" class="px-6 py-3">
+        قیمت
+    </th>
+    <th scope="col" class="px-6 py-3">
+        وزن
+    </th>
+    <th scope="col" class="px-6 py-3">
+        عملیات
+    </th>
+</tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4">
+                    نقره‌ای
+                </td>
+                <td class="px-6 py-4">
+                    لپتاپ
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    2999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    3.0 پوند
+                </td>
+                <td class="flex items-center px-6 py-4 space-x-3">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">حذف</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    مایکروسافت سرفیس پرو
+                </th>
+                <td class="px-6 py-4">
+                    سفید
+                </td>
+                <td class="px-6 py-4">
+                    لپتاپ پی سی
+                </td>
+                <td class="px-6 py-4">
+                    خیر
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    1999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    1.0 پوند
+                </td>
+                <td class="flex items-center px-6 py-4 space-x-3">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">حذف</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    ماوس مجیک 2
+                </th>
+                <td class="px-6 py-4">
+                    مشکی
+                </td>
+                <td class="px-6 py-4">
+                    لوازم جانبی
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    خیر
+                </td>
+                <td class="px-6 py-4">
+                    99 دلار
+                </td>
+                <td class="px-6 py-4">
+                    0.2 پوند
+                </td>
+                <td class="flex items-center px-6 py-4 space-x-3">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">حذف</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    اپل واچ
+                </th>
+                <td class="px-6 py-4">
+                    مشکی
+                </td>
+                <td class="px-6 py-4">
+                    ساعت‌ها
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    خیر
+                </td>
+                <td class="px-6 py-4">
+                    199 دلار
+                </td>
+                <td class="px-6 py-4">
+                    0.12 پوند
+                </td>
+                <td class="flex items-center px-6 py-4 space-x-3">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">حذف</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    آیمک اپل
+                </th>
+                <td class="px-6 py-4">
+                    نقره‌ای
+                </td>
+                <td class="px-6 py-4">
+                    کامپیوتر
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    بله
+                </td>
+                <td class="px-6 py-4">
+                    2999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    7.0 پوند
+                </td>
+                <td class="flex items-center px-6 py-4 space-x-3">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">حذف</a>
+                </td>
+            </tr>
+       
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه تیبل 2</p>
+
+<div class="min-h-screen shadow-md p-2">
+    <div class='overflow-x-auto w-full'>
+        <table class='mx-auto max-w-4xl w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden'>
+            <thead class="bg-gray-900">
+                <tr class="text-white text-right">
+                    <th class="font-semibold text-sm uppercase px-6 py-4"> نام </th>
+                    <th class="font-semibold text-sm uppercase px-6 py-4"> سمت </th>
+                    <th class="font-semibold text-sm uppercase px-6 py-4 text-center"> وضعیت </th>
+                    <th class="font-semibold text-sm uppercase px-6 py-4 text-center"> نقش </th>
+                    <th class="font-semibold text-sm uppercase px-6 py-4"> </th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="inline-flex w-10 h-10"> <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://i.imgur.com/siKnZP2.jpg' /> </div>
+                            <div>
+                                <p> فاطمه احمدی </p>
+                                <p class="text-gray-500 text-sm font-semibold tracking-wide"> mirarodeo23@mail.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <p class=""> توسعه دهنده نرم‌افزار </p>
+                        <p class="text-gray-500 text-sm font-semibold tracking-wide"> توسعه </p>
+                    </td>
+                    <td class="px-6 py-4 text-center"> <span class="text-white text-sm w-1/3 pb-1 bg-green-600 font-semibold px-2 rounded-full"> فعال </span> </td>
+                    <td class="px-6 py-4 text-center"> توسعه دهنده </td>
+                    <td class="px-6 py-4 text-center"> <a href="#" class="text-purple-800 hover:underline">ویرایش</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه تیبل 3</p>
+
+<div class="relative p-2 overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="flex  items-center justify-between pb-4">
+        <div>
+            <button id="dropdownRadioButton" data-dropdown-toggle="dropdownRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+                <svg class="w-4 h-4 mr-2 text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                آخرین ۳۰ روز
+                <svg class="w-3 h-3 mr-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 3847.5px, 0px);">
+                <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
+                    <li>
+                        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                            <input id="filter-radio-example-1" type="radio" value="" name="filter-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="filter-radio-example-1" class="w-full mr-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">روز گذشته</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                            <input checked="" id="filter-radio-example-2" type="radio" value="" name="filter-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="filter-radio-example-2" class="w-full mr-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">۷ روز گذشته</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                            <input id="filter-radio-example-3" type="radio" value="" name="filter-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="filter-radio-example-3" class="w-full mr-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">۳۰ روز گذشته</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                            <input id="filter-radio-example-4" type="radio" value="" name="filter-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="filter-radio-example-4" class="w-full mr-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">ماه گذشته</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                            <input id="filter-radio-example-5" type="radio" value="" name="filter-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="filter-radio-example-5" class="w-full mr-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">سال گذشته</label>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <label for="table-search" class="sr-only">جستجو</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pr-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+            </div>
+            <input type="text" id="table-search" class="block p-2 pr-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" praceholder="جستجو آیتم">
+        </div>
+    </div>
+    <table class="w-full text-sm text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-all-search" class="sr-only">چک‌باکس</label>
+                    </div>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    نام محصول
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    رنگ
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    دسته‌بندی
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    قیمت
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    عملیات
+                </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    اپل مک‌بوک پرو 17"
+                </th>
+                <td class="px-6 py-4">
+                    نقره‌ای
+                </td>
+                <td class="px-6 py-4">
+                    لپتاپ
+                </td>
+                <td class="px-6 py-4">
+                    2999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-2" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    مایکروسافت سرفیس پرو
+                </th>
+                <td class="px-6 py-4">
+                    سفید
+                </td>
+                <td class="px-6 py-4">
+                    لپتاپ PC
+                </td>
+                <td class="px-6 py-4">
+                    1999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-3" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    ماوس مجیک 2 اپل
+                </th>
+                <td class="px-6 py-4">
+                    مشکی
+                </td>
+                <td class="px-6 py-4">
+                    لوازم جانبی
+                </td>
+                <td class="px-6 py-4">
+                    99 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-3" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    اپل واچ
+                </th>
+                <td class="px-6 py-4">
+                    نقره‌ای
+                </td>
+                <td class="px-6 py-4">
+                    لوازم جانبی
+                </td>
+                <td class="px-6 py-4">
+                    179 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-3" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    آیپد
+                </th>
+                <td class="px-6 py-4">
+                    طلایی
+                </td>
+                <td class="px-6 py-4">
+                    تبلت
+                </td>
+                <td class="px-6 py-4">
+                    699 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-3" class="sr-only">چک‌باکس</label>
+                    </div>
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    آیمک 27 اینچی اپل
+                </th>
+                <td class="px-6 py-4">
+                    نقره‌ای
+                </td>
+                <td class="px-6 py-4">
+                    کامپیوتر رومیزی
+                </td>
+                <td class="px-6 py-4">
+                    3999 دلار
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">ویرایش</a>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه تیبل 4</p>
+<div class="container shadow-md mx-auto px-4 sm:px-8 p-2">
+    <div class="py-8">
+        <div>
+            <h2 class="text-2xl font-semibold leading-tight">کاربران</h2>
+        </div>
+        <div class="my-2 flex sm:flex-row flex-col">
+            <div class="flex flex-row mb-1 sm:mb-0">
+                <div class="relative">
+                    <select
+                        class="appearance-none h-full rounded-l border block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>20</option>
+                    </select>
+                    <div
+                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative">
+                    <select
+                        class="appearance-none h-full rounded-r border-t sm:rounded-r-none sm:border-r-0 border-r border-b block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-l focus:border-r focus:bg-white focus:border-gray-500">
+                        <option>همه</option>
+                        <option>فعال</option>
+                        <option>غیرفعال</option>
+                    </select>
+                    <div
+                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="block relative">
+                <span class="h-full absolute inset-y-0 left-0 flex items-center pr-2">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current text-gray-500">
+                        <path
+                            d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z">
+                        </path>
+                    </svg>
+                </span>
+                <input praceholder="جستجو"
+                    class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pr-8 pr-6 py-2 w-full bg-white text-sm praceholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" />
+            </div>
+        </div>
+        <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+            <div class="inline-block min-w-full  rounded-lg overflow-hidden">
+                <table class="min-w-full leading-normal">
+                    <thead>
+                        <tr>
+                     
+<th
+class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
+کاربر
+</th>
+<th
+class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
+نقش
+</th>
+<th
+class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
+ایجاد شده در
+</th>
+<th
+class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
+وضعیت
+</th>
+</tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div class="flex items-center">
+                              <div class="flex-shrink-0 w-10 h-10">
+                                <img class="w-full h-full rounded-full"
+                                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"
+                                  alt="">
+                              </div>
+                              <div class="mr-3">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                  ویرا کارپنتر
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">مدیر</p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                              ۲۱ ژانویه ۲۰۲۰
+                            </p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                              <span aria-hidden class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                              <span class="relative">فعال</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div class="flex items-center">
+                              <div class="flex-shrink-0 w-10 h-10">
+                                <img class="w-full h-full rounded-full"
+                                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"
+                                  alt="">
+                              </div>
+                              <div class="mr-3">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                  بلیک بومن
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">ویراستار</p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                              ۱ ژانویه ۲۰۲۰
+                            </p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                              <span aria-hidden class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                              <span class="relative">فعال</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div class="flex items-center">
+                              <div class="flex-shrink-0 w-10 h-10">
+                                <img class="w-full h-full rounded-full"
+                                  src="https://images.unsplash.com/photo-1540845511934-7721dd7adec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"
+                                  alt="">
+                              </div>
+                              <div class="mr-3">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                  دانا مور
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">ویراستار</p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                              ۱۰ ژانویه ۲۰۲۰
+                            </p>
+                          </td>
+                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <span class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
+                              <span aria-hidden class="absolute inset-0 bg-orange-200 opacity-50 rounded-full"></span>
+                              <span class="relative">معلق شده</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-5 py-5 bg-white text-sm">
+                            <div class="flex items-center">
+                              <div class="flex-shrink-0 w-10 h-10">
+                                <img class="w-full h-full rounded-full"
+                                  src="https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;h=160&amp;w=160&amp;q=80"
+                                  alt="">
+                              </div>
+                              <div class="mr-3">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                  آلونزو کاکس
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-5 py-5 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">مدیر</p>
+                          </td>
+                          <td class="px-5 py-5 bg-white text-sm">
+                            <p class="text-gray-900 whitespace-no-wrap">۱۸ ژانویه ۲۰۲۰</p>
+                          </td>
+                          <td class="px-5 py-5 bg-white text-sm">
+                            <span class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight">
+                              <span aria-hidden class="absolute inset-0 bg-red-200 opacity-50 rounded-full"></span>
+                              <span class="relative">غیرفعال</span>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                      </table>
+                      <div class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
+                        <span class="text-xs xs:text-sm text-gray-900">
+                          نمایش ۱ تا ۴ از ۵۰ مورد
+                        </span>
+                        <div class="inline-flex mt-2 xs:mt-0">
+                          <button class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
+                            قبلی
+                          </button>
+                          <button class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
+                            بعدی
+                          </button>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه تیبل 5</p>
+
+
+
+<div class="flex flex-col mt-8 shadow-md p-2">
+    <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200  sm:rounded-lg">
+            <table class="min-w-full">
+                <thead>
+                    <tr>
+                        <th
+                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                            نام</th>
+                        <th
+                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                            ایمیل</th>
+                        <th
+                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                            وضعیت</th>
+                        <th
+                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                            ویرایش</th>
+                        <th
+                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                            حذف</th>
+                    </tr>
+                </thead>
+
+                <tbody class="bg-white">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-10 h-10">
+                                    <img class="w-10 h-10 rounded-full" src="https://source.unsplash.com/user/erondu"
+                                        alt="admin dashboard ui">
+                                </div>
+
+                                <div class="mr-4">
+                                    <div class="text-sm font-medium leading-5 text-gray-900">
+                                        رضا محمدی
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="text-sm leading-5 text-gray-500">john@example.com</div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <span
+                                class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">فعال</span>
+                        </td>
+
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </td>
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-10 h-10">
+                                    <img class="w-10 h-10 rounded-full" src="https://source.unsplash.com/user/erondu"
+                                        alt="admin dashboard ui">
+                                </div>
+
+                                <div class="mr-4">
+                                    <div class="text-sm font-medium leading-5 text-gray-900">
+                                        رضا محمدی
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="text-sm leading-5 text-gray-500">john@example.com</div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <span
+                                class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">فعال</span>
+                        </td>
+
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </td>
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-10 h-10">
+                                    <img class="w-10 h-10 rounded-full" src="https://source.unsplash.com/user/erondu"
+                                        alt="admin dashboard ui">
+                                </div>
+
+                                <div class="mr-4">
+                                    <div class="text-sm font-medium leading-5 text-gray-900">
+                                        رضا محمدی
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <div class="text-sm leading-5 text-gray-500">john@example.com</div>
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                            <span
+                                class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">فعال</span>
+                        </td>
+
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </td>
+                        <td
+                            class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+                </div>
+
+                
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="inc/js/custom-js.js"></script>
+
+    <!-- partial -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+
+    <script src="../inc/js/custom-js.js"></script>
+    
+</body>
+
+</html>

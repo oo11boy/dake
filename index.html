@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>قالب مدیریت ادمین - دکه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="inc/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css'>
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between">
+            <nav class="nav-side-menu mt-2 col-12 col-lg-3">
+                <div class="brand">
+
+                    <a href="index.html"><img class="mb-2 d-none d-xl-block h-25  shadow-sm w-100"
+                            src="inc/img/logosm.png" alt="" srcset=""></a>
+
+                    <div class="adminprofile shadow-sm p-md-3 mb-md-5  p-0 mb-0 bg-white rounded ">
+                        <div class="adminavatar d-flex justify-content-start align-items-start m-auto w-100">
+                            <div class="avatartag m-1 text-center d-flex flex-column">
+                                <img class="w-100 h-100 rounded-4" src="inc/img/avatar.png" alt=""
+                                    srcset="">
+                                <p class="admincolortext bg-info rounded-3 text-white">ادمین</p>
+                            </div>
+                            <div class="d-flex flex-column h-100 align-items-end justify-content-center">
+
+                                <div class=" d-flex justify-content-center  align-items-center">
+                                    <p class="p-0 m-1 fs-6">رسول قاسمی
+
+                                    </p>
+
+                                    <i class="fas  fa-check-circle text-primary bluetick"></i>
+                                </div>
+                                <p dir="ltr" class="m-1  d-none d-md-block"> @oo11boy</p>
+                            </div>
+                        </div>
+                        <div class="fastsetting p-2 w-100 d-flex flex-row justify-content-between align-items-center">
+                            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fas fa-sun"></i>
+                                <div class="form-check m-1 form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-2x toggle-btn" data-bs-toggle="collapse" data-bs-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li class="activeitem">
+                            <a href="index.html">
+                                <i class="fas fa-fw fa-tachometer-alt"></i>داشبورد
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#service" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-table"></i>نوشته ها
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="pages/detailpage.html">همه نوشته ها</a></li>
+                                <li><a href="pages/addeditform.html"> افزودن نوشته جدید</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#new" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-users"></i>محصولات <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="new">
+                                <li><a href="pages/detailpage.html">همه محصولات</a></li>
+                                <li><a href="pages/addeditform.html">افزودن محصول جدید</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="pages/objects.html">
+                                <i class="fas fa-fw fa-gift"></i>عناصر رابط کاربری
+
+
+                        </li>
+                        <li>
+                            <a href="pages/formslogin.html">
+                                <i class="fas fa-fw fa-calendar-alt"></i>انواع فرم ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/settingprofile.html">
+                                <i class="fas fa-fw fa-user"></i>پروفایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/detailpage.html">
+                                <i class="fas fa-fw fa-users"></i>انواع تیبل ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/settingprofile.html">
+                                <i class="fas fa-fw fa-cogs"></i>تنظیمات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="col-12 col-md-3 fakenav d-none d-lg-flex"></div>
+            <div class="content col-12 col-xl-7">
+
+
+
+
+                <div class="w-92  m-auto heightsec1 row flex-row justify-content-center align-items-center">
+
+
+                    <div class="row  h-100 col-lg-7 col-12 d-flex justify-content-between ">
+                        <div class=" col-12 col-md-6 mb-2 datenow ">
+                            <p>1402/3/21</p>
+                            <p>یکشنبه 21 خرداد 1402</p>
+                        </div>
+
+                        <form action="" class="col-12 col-md-6">
+                            <input class="w-100  rounded-2 border border-opacity-50 p-1" type="search"
+                                placeholder="جستجو">
+                        </form>
+                    </div>
+
+                    <div class="mt-2 addplace mb-2 h-100 d-flex col-12 col-lg-5">
+                        <a href="pages/addeditform.html" type="button" class="w-50  btn btn-danger mx-1">ایجاد محصول</a>
+                        <a href="pages/addeditform.html"  type="button" class=" w-50 btn btn-primary mx-1">ایجاد نوشته</a>
+                    </div>
+
+                </div>
+
+
+                <div class="row w-92  m-auto heightsec2 justify-content-evenly align-items-center">
+
+                    <div
+                        class="row topchart h-100 bg-white shadow-sm col-12 mt-3 mx-auto col-lg-7  rounded-4 p-2 d-flex flex-column">
+                        <p class="col-12 h-100 fssm p-2">
+                            <i class="fa-solid fa-chart-line"></i>
+                            چارت ورودی کاربران
+                        </p>
+                        <div class="col-12 h-100 ">
+                            <div class="line-chart">
+                                <div class="aspect-ratio">
+                                    <div class="underchart">
+
+                                        <canvas dir="rtl" class="chartfont bg-light rounded-2" id="chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="informposts p-0 h-100  col-12 col-lg-5 mt-3 mx-auto">
+                        <div class="carddash bg-white shadow-sm fssm p-2 rounded-4">
+                            <div class="mb-2 d-flex justify-content-between align-items-center">
+                                <p class="newuserp">کاربران جدید:</p>
+
+                                <i class="fa-brands fa-medapps"></i>
+                            </div>
+                            <p class="adduser">+45</p>
+                            <div class="mt-2 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="mb-2 newuserp">تعداد کل:</p>
+                                    <p class=" adduser">5367</p>
+                                </div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="carddash bg-white shadow-sm fssm p-2 rounded-4">
+                            <div class="mb-2 d-flex justify-content-between align-items-center">
+                                <p class="newuserp">سفارش جدید:</p>
+
+                                <i class="fa-brands fa-medapps"></i>
+                            </div>
+                            <p class="adduser">+17</p>
+                            <div class="mt-2 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="mb-2 newuserp">تعداد کل:</p>
+                                    <p class=" adduser">7785</p>
+                                </div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row w-92 m-auto justify-content-between align-items-center">
+
+
+
+
+                    <div
+                        class="myprice mt-3 heightsec3 fssm h-100 shadow-sm col-12 bg-white rounded-4 p-2 d-flex justify-content-between align-items-center">
+
+                        <p>
+                            <i class="fa-solid fa-wallet"></i>
+                            درآمد شما:
+                        </p>
+                        <p>147,420,122 تومان</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row w-92 mt-3 m-auto justify-content-between align-items-center">
+                    <div class="carddash mb-2 bg-white col-12 shadow-sm fssm p-2 rounded-4">
+                        <div class="mb-2 d-flex justify-content-between align-items-center">
+                            <p class="newuserp">محصول جدید:</p>
+
+                            <i class="fa-brands fa-medapps"></i>
+                        </div>
+                        <p class="adduser">+1</p>
+                        <div class="mt-2 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-2 newuserp">تعداد کل:</p>
+                                <p class=" adduser">92</p>
+                            </div>
+                            <i class="fa-brands fa-product-hunt"></i>
+                        </div>
+                    </div>
+                    <div class="carddash mb-2 bg-white col-12 shadow-sm fssm p-2 rounded-4">
+                        <div class="mb-2 d-flex justify-content-between align-items-center">
+                            <p class="newuserp">پست جدید:</p>
+
+                            <i class="fa-brands fa-medapps"></i>
+                        </div>
+                        <p class="adduser">+3</p>
+                        <div class="mt-2 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-2 newuserp">تعداد کل:</p>
+                                <p class=" adduser">84</p>
+                            </div>
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="leftpannel mt-2 col-12 left-po   col-xl-2">
+                <div class="w-100 ">
+                    <div class="etebar  d-flex justify-content-between align-items-center shadow-sm bg-white p-2">
+                        <div class="iconaddetebar">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <i class="fas fs-2 ps-1 fa-crown"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class="howetebar">
+                            <p>120,000,21 تومان</p>
+                        </div>
+                    </div>
+                    <div class="banner1 mt-3">
+                        <a href="#"><img class="w-100 rounded-3" src="inc/img/banner1.png" alt="" srcset=""></a>
+                    </div>
+
+                    <div class="userstar row d-flex flex-row  fssmplus mt-3">
+                        <p class="opacity-50 fssm mb-2">کاربران برگزیده</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <a href="#"><img src="inc/img/1wo.png" alt="" srcset=""></a>
+                        <a href="#"><img src="inc/img/2m.png" alt="" srcset=""></a>
+                        <a href="#"><img src="inc/img/4wo.png" alt="" srcset=""></a>
+                        <a href="#"><img src="inc/img/3m.png" alt="" srcset=""></a>
+                    </div>
+                        <div class="userrich  mt-3">
+                            <p class="opacity-50 fssm mb-2"> بیشترین فروش</p>
+                            <div
+                                class=" shadow-sm bg-white p-2 my-2 d-flex picrich justify-content-between align-items-center">
+                                <img src="inc/img/7wm.png" alt="" srcset="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <a class="text-decoration-none text-dark" href="#">رضا سلیمی</a>
+
+                                    <p>12,023,100 تومان</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between flex-column">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                    <p>+3050</p>
+                                </div>
+                            </div>
+                            <div
+                                class=" shadow-sm bg-white p-2 my-2 d-flex picrich justify-content-between align-items-center">
+                                <img src="inc/img/6wo.png" alt="" srcset="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <a class="text-decoration-none text-dark" href="#">فاطمه افشاریان </a>
+
+                                    <p>3,563,320 تومان</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between flex-column">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                    <p>+1070</p>
+                                </div>
+                            </div>
+                            <div
+                                class=" shadow-sm bg-white p-2 my-2 d-flex picrich justify-content-between align-items-center">
+                                <img src="inc/img/5m.png" alt="" srcset="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <a class="text-decoration-none text-dark" href="#">محمدرضا نیمایی</a>
+
+                                    <p>2,100,450 تومان</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between flex-column">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                    <p>+250</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="banner1 mt-3">
+                    <a href="#"><img class="w-100 rounded-3" src="inc/img/banner2.png" alt="" srcset=""></a>
+                </div>
+
+                <div
+                    class="shadow-sm mt-2 fssmplus p-1 opacity-50 bg-white copyright d-flex align-items-center justify-content-center w-100">
+                    تمامی حقوق محفوظ است
+                </div>
+            </div>
+            <div class="col-12 col-md-2 fakeleftpannel"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="inc/js/custom-js.js"></script>
+
+    <!-- partial -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+
+    <script src="inc/js/custom-js.js"></script>
+</body>
+
+</html>

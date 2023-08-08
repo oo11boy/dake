@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>قالب مدیریت ادمین - دکه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../inc/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css'>
+    <link href=
+    "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+              rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between">
+            <nav class="nav-side-menu mt-2 col-12 col-lg-3">
+                <div class="brand">
+                    
+                <a href="../index.html"><img class="mb-2 d-none d-xl-block h-25  shadow-sm w-100" src="../inc/img/logosm.png" alt="" srcset=""></a>
+  
+                    <div class="adminprofile shadow-sm p-md-3 mb-md-5  p-0 mb-0 bg-white rounded ">
+                        <div class="adminavatar d-flex justify-content-start align-items-start m-auto w-100">
+                            <div class="avatartag m-1 text-center d-flex flex-column">
+                                <img class="w-100 h-100 rounded-4" src="../inc/img/avatar.png" alt="" srcset="">
+                                <p class="admincolortext bg-info rounded-3 text-white">ادمین</p>
+                            </div>
+                            <div class="d-flex flex-column h-100 align-items-end justify-content-center">
+
+                                <div class=" d-flex justify-content-center  align-items-center">
+                                    <p class="p-0 m-1 fs-6">رسول قاسمی
+
+                                    </p>
+
+                                    <i class="fas  fa-check-circle text-primary bluetick"></i>
+                                </div>
+                                <p dir="ltr" class="m-1  d-none d-md-block"> @oo11boy</p>
+                            </div>
+                        </div>
+                        <div class="fastsetting p-2 w-100 d-flex flex-row justify-content-between align-items-center">
+                            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fas fa-sun"></i>
+                                <div class="form-check m-1 form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-2x toggle-btn" data-bs-toggle="collapse" data-bs-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li class="activeitem">
+                            <a href="../index.html">
+                                <i class="fas fa-fw fa-tachometer-alt"></i>داشبورد
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#service" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-table"></i>نوشته ها
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="../pages/detailpage.html">همه نوشته ها</a></li>
+                                <li><a href="../pages/addeditform.html"> افزودن نوشته جدید</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#new" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-users"></i>محصولات  <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="new">
+                               <li><a href="../pages/detailpage.html">همه محصولات</a></li>
+                                <li><a href="../pages/addeditform.html">افزودن محصول جدید</a></li>
+
+                               
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="../pages/objects.html">
+                                <i class="fas fa-fw fa-gift"></i>عناصر رابط کاربری
+                                
+                       
+                        </li>
+                        <li>
+                            <a href="../pages/formslogin.html">
+                                <i class="fas fa-fw fa-calendar-alt"></i>انواع فرم ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-user"></i>پروفایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/detailpage.html">
+                                <i class="fas fa-fw fa-users"></i>انواع تیبل ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-cogs"></i>تنظیمات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+          </nav>
+            
+            
+            <div class="col-12 col-md-3 fakenav d-none d-lg-flex"></div>
+            <div class="content col-12 col-xl-9">
+
+                <div class="row  mb-3  col-12 d-flex justify-content-between ">
+                    <div class=" col-12 col-md-6 mb-2 datenow ">
+                        <p>1402/3/21</p>
+                        <p>یکشنبه 21 خرداد 1402</p>
+                    </div>
+
+                    <form action="" class="col-12 col-md-6">
+                        <input class="w-100  rounded-2 border border-opacity-50 p-1" type="search" placeholder="جستجو">
+                    </form>
+                </div>
+
+                     <div class="titletools my-3">
+                        <p class="alert alert-primary">شما میتوانید از امکانات زیر برای شخصی سازی این پنل استفاده کنید:</p>
+                     </div>
+
+                <p class="p-2 mt-5 mb-1 btn btn-primary">نمونه فرم 1</p>
+                
+
+                <div class="shadow-md p-2">
+                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                            <div class="p-6 bg-white border-b border-gray-200">
+                                <form method="POST" action="action.php">
+                                    <div class="mb-4">
+                                        <label class="text-xl text-gray-600">عنوان <span class="text-red-500">*</span></label></br>
+                                        <input type="text" class="border-2 border-gray-300 p-2 w-full" name="title" id="title" value="" required>
+                                    </div>
+                
+                                <div class="mb-4">
+                                    <label class="text-xl text-gray-600">توضیحات</label></br>
+                                    <input type="text" class="border-2 border-gray-300 p-2 w-full" name="description" id="description" placeholder="(اختیاری)">
+                                </div>
+                
+                                <div class="mb-8">
+                                    <label class="text-xl text-gray-600">محتوا <span class="text-red-500">*</span></label></br>
+                                    <textarea name="content" class="border-2 border-gray-500" style="padding: 8px; margin: 8px; text-align: right;">
+                                            
+                                    </textarea>
+                                </div>
+                
+                                <div class="flex p-1">
+                                    <select class="border-2 border-gray-300 border-r p-2" name="action">
+                                        <option>ذخیره و انتشار</option>
+                                        <option>ذخیره پیش نویس</option>
+                                    </select>
+                                    <button role="submit" class="p-3 bg-blue-500 text-white hover:bg-blue-400" required>ارسال</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+                <script>
+                    CKEDITOR.replace('content');
+                </script>
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه فرم 2</p>
+<div class="w-full p-2 shadow-md max-w-xs" >
+    <form class="bg-white  rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                نام کاربری
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="نام کاربری">
+        </div>
+        <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                رمز عبور
+            </label>
+            <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+            <p class="text-red-500 text-xs italic">لطفاً یک رمز عبور انتخاب کنید.</p>
+        </div>
+        <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                ورود
+            </button>
+            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                فراموشی رمز عبور؟
+            </a>
+        </div>
+    </form>
+    <p class="text-center text-gray-500 text-xs">
+        &copy;  تمامی حقوق محفوظ است.
+    </p>
+</div>
+
+
+
+<p class="p-2 mt-5 mb-1 btn btn-primary">نمونه فرم 3</p>
+
+
+<form class="w-full p-2 shadow-md max-w-lg">
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+          نام
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="جین">
+        <p class="text-red-500 text-xs italic">لطفاً این فیلد را پر کنید.</p>
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+          نام خانوادگی
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="دو">
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          رمز عبور
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+        <p class="text-gray-600 text-xs italic">می‌توانید آن را به هر طول و شکلی انتخاب کنید</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-2">
+      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+          شهر
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="الباکرکی">
+      </div>
+      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+          استان
+        </label>
+        <div class="relative">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+            <option>نیومکزیکو</option>
+            <option>میزوری</option>
+            <option>تگزاس</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+          کد پستی
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+      </div>
+    </div>
+    <div class="underline-form">
+    
+        <button type="button" class="bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm text-white py-1 px-2 rounded">ثبت نام</button>
+        <button type="button" class="border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded">لغو</button>
+    </div>
+  
+  </form>
+
+
+  <div class="titletools my-3">
+    <p class="alert alert-primary">
+        
+        شما میتوانید در صفحه زیر فرم های ورود و ثبت نام پیشرفته تری را مشاهده نمایید:
+        <a class="btn mt-3 btn-primary" href="formslogin.html">برای مشاهده فرم های پیشرفته تر اینجا کلیک کنید</a>
+
+    </p>
+
+
+</div>
+                </div>
+                </div>
+                </div>
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                <script src="../inc/js/custom-js.js"></script>
+            
+                <!-- partial -->
+                <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+                <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+            
+                </body>
+
+                </html>

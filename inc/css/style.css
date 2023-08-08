@@ -1,0 +1,314 @@
+@font-face {
+    font-family: isans;
+    src: url('../fonts/isans.ttf');
+}
+
+
+html,
+body {
+    background-color: #F5F9FC;
+
+    height: 100vh;
+    font-family: isans;
+}
+.w-95{
+    width: 98%!important;
+}
+.bluetick{
+    transform: translate(-20%, 20%);
+}
+
+.avatartag{
+    width: 60px;
+    height: 60px;
+}
+.adminavatar{
+    height: 80px;
+}
+.admincolortext{
+
+    padding: 1px;
+    font-size: 0.6em;
+}
+.left-po{
+    left: 3%;
+}
+
+.nav-side-menu {
+   
+     font-size: 12px;
+    font-weight: 200;
+padding: 10px;
+   
+    width: 250px;
+    height: 100%;
+}
+
+.nav-side-menu .brand {
+   
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-side-menu .toggle-btn {
+    display: none;
+}
+
+.nav-side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.nav-side-menu ul .sub-menu li {
+    line-height: 28px;
+    margin-right: 0;
+}
+
+.nav-side-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    cursor: pointer;
+    padding-right: 0;
+}
+
+.nav-side-menu li .sub-menu li {
+    line-height: 28px;
+    margin-right: 0;
+}
+
+.nav-side-menu li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 1.3em;
+}
+
+.nav-side-menu li a i {
+    margin: 10px 15px;
+}
+
+.sub-menu li {
+    padding-right: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li .fa-chevron-down {
+    margin: 10px;
+    vertical-align: middle;
+    float: left;
+    transition: transform 0.4s;
+}
+
+li.active .fa-chevron-down {
+    transform: rotateX(180deg);
+}
+
+@media (max-width: 1200px) {
+    .nav-side-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .nav-side-menu .toggle-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        z-index: 10 !important;
+        padding: 3px;
+
+        color: #000;
+        width: 40px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .brand {
+        text-align: right !important;
+        font-size: 22px;
+        
+      
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-side-menu .menu-list .menu-content {
+        display: block;
+    }
+}
+
+
+p{
+    margin: 0!important;
+}
+.content {
+    padding: 20px 0;
+}
+
+.activeitem{
+    background-color: #39B8E1;
+  border-radius: 10px;
+}
+.activeitem a , .activeitem i{
+    color: white!important;
+}
+
+.searchform{
+    position: relative;
+}
+
+.searchform input{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.265);
+    padding: 10px;
+}
+
+.fssm{
+    font-size: .8em;
+}
+
+.chartfont{
+    font-family: isans;
+}
+
+.line-chart {
+	animation: fadeIn 600ms cubic-bezier(.57,.25,.65,1) 1 forwards;
+  opacity: 0;
+	max-width: 640px;
+	width: 100%;
+    font-family: isans;
+}
+
+.aspect-ratio {
+  height: 0;
+  padding-bottom: 50%; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.lasts li{
+margin: 10px;
+font-size: 0.5em;
+}
+
+.lasts a{
+    color: #000;
+    text-decoration: none;
+}
+.lasts a li:hover{
+  
+    color: rgb(0, 30, 255);
+}
+
+.informposts{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+}
+.carddash i{
+    color: #39b8e1;
+    font-size: 2em;
+}
+.w-92{
+    width: 98%;
+    
+}
+.adduser{
+    font-size: 2em;
+}
+.newuserp{
+    color: rgba(0, 0, 0, 0.525);
+}
+canvas{
+  width: 100%;
+   margin-bottom: 90px;
+   margin-top: 40px;
+
+}
+.p-0{
+    padding: 0!important;
+}
+.heightsec1{
+    min-height: 50px;
+}
+.heightsec3{
+    min-height: 40px;
+}
+
+@media (min-width: 767px) {
+.heightsec2{
+    min-height: 350px;
+}
+.informposts, .topchart{
+    min-height: 350px;
+}
+
+}
+
+.row>*{
+    padding-right: calc(var(--bs-gutter-x) * .5)!important;
+    padding-left: calc(var(--bs-gutter-x) * .5)!important;
+}
+
+
+@media (max-width: 767px) {
+
+.informposts{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+}
+@media (min-width: 1200px) {
+.nav-side-menu{
+    position: fixed;
+}
+.leftpannel{
+    position: fixed;
+}
+}
+
+
+.userstar a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+
+.picrich img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.fssmplus{
+    font-size: 0.7em;
+}
+
+.stylecode{
+    background-color: #000;
+    color: white;
+}
+
+.modal{
+    --bs-modal-width: 80%!important;
+}
+
+
+

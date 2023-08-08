@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>قالب مدیریت ادمین - دکه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../inc/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css'>
+    <link href=
+    "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+              rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between">
+            <nav class="nav-side-menu mt-2 col-12 col-lg-3">
+                <div class="brand">
+                    
+                <a href="../index.html"><img class="mb-2 d-none d-xl-block h-25  shadow-sm w-100" src="../inc/img/logosm.png" alt="" srcset=""></a>
+  
+                    <div class="adminprofile shadow-sm p-md-3 mb-md-5  p-0 mb-0 bg-white rounded ">
+                        <div class="adminavatar d-flex justify-content-start align-items-start m-auto w-100">
+                            <div class="avatartag m-1 text-center d-flex flex-column">
+                                <img class="w-100 h-100 rounded-4" src="../inc/img/avatar.png" alt="" srcset="">
+                                <p class="admincolortext bg-info rounded-3 text-white">ادمین</p>
+                            </div>
+                            <div class="d-flex flex-column h-100 align-items-end justify-content-center">
+
+                                <div class=" d-flex justify-content-center  align-items-center">
+                                    <p class="p-0 m-1 fs-6">رسول قاسمی
+
+                                    </p>
+
+                                    <i class="fas  fa-check-circle text-primary bluetick"></i>
+                                </div>
+                                <p dir="ltr" class="m-1  d-none d-md-block"> @oo11boy</p>
+                            </div>
+                        </div>
+                        <div class="fastsetting p-2 w-100 d-flex flex-row justify-content-between align-items-center">
+                            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fas fa-sun"></i>
+                                <div class="form-check m-1 form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-2x toggle-btn" data-bs-toggle="collapse" data-bs-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li class="activeitem">
+                            <a href="../index.html">
+                                <i class="fas fa-fw fa-tachometer-alt"></i>داشبورد
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#service" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-table"></i>نوشته ها
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="../pages/detailpage.html">همه نوشته ها</a></li>
+                                <li><a href="../pages/addeditform.html"> افزودن نوشته جدید</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" data-bs-target="#new" class="collapsed"
+                                aria-expanded="false">
+                                <i class="fas fa-fw fa-users"></i>محصولات  <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-menu collapse" id="new">
+                               <li><a href="../pages/detailpage.html">همه محصولات</a></li>
+                                <li><a href="../pages/addeditform.html">افزودن محصول جدید</a></li>
+
+                               
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="../pages/objects.html">
+                                <i class="fas fa-fw fa-gift"></i>عناصر رابط کاربری
+                                
+                       
+                        </li>
+                        <li>
+                            <a href="../pages/formslogin.html">
+                                <i class="fas fa-fw fa-calendar-alt"></i>انواع فرم ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-user"></i>پروفایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/detailpage.html">
+                                <i class="fas fa-fw fa-users"></i>انواع تیبل ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/settingprofile.html">
+                                <i class="fas fa-fw fa-cogs"></i>تنظیمات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+          </nav>
+            
+            
+            <div class="col-12 col-md-3 fakenav d-none d-lg-flex"></div>
+            <div class="content col-12 col-xl-9">
+
+                <div class="row  mb-3  col-12 d-flex justify-content-between ">
+                    <div class=" col-12 col-md-6 mb-2 datenow ">
+                        <p>1402/3/21</p>
+                        <p>یکشنبه 21 خرداد 1402</p>
+                    </div>
+
+                    <form action="" class="col-12 col-md-6">
+                        <input class="w-100  rounded-2 border border-opacity-50 p-1" type="search" placeholder="جستجو">
+                    </form>
+                </div>
+
+
+                <div class="titletools my-3">
+                    <p class="alert alert-primary">تنظیمات حساب و پروفایل:</p>
+
+                 </div>
+
+<form class="shadow-md bg-white p-3">
+  <div class="space-y-12">
+    <div class="border-b border-gray-900/10 pb-12">
+      <h2 class="text-base font-semibold leading-7 text-gray-900">پروفایل</h2>
+      <p class="mt-1 text-sm leading-6 text-gray-600">این اطلاعات به صورت عمومی نمایش داده می شود، بنابراین در اشتراک گذاری موارد دقت کنید.</p>
+
+  <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+    <div class="sm:col-span-4">
+      <label for="username" class="block text-sm font-medium leading-6 text-gray-900">نام کاربری</label>
+      <div class="mt-2">
+        <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+       
+          <input type="text" name="username" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pr-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-span-full">
+      <label for="about" class="block text-sm font-medium leading-6 text-gray-900">درباره</label>
+      <div class="mt-2">
+        <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+      </div>
+      <p class="mt-3 text-sm leading-6 text-gray-600">چند جمله‌ای درباره خود بنویسید.</p>
+    </div>
+    <div class="col-span-full">
+        <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">عکس</label>
+        <div class="mt-2 flex items-center gap-x-3">
+          <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+          </svg>
+          <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">تغییر</button>
+        </div>
+      </div>
+
+  <div class="col-span-full">
+    <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">عکس پوشش</label>
+    <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+      <div class="text-center">
+        <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+        </svg>
+        <div class="mt-4 flex text-sm leading-6 text-gray-600">
+          <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+            <span>بارگذاری فایل</span>
+            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+          </label>
+          <p class="pr-1">یا فایل را بکشید و رها کنید</p>
+        </div>
+        <p class="text-xs leading-5 text-gray-600">PNG، JPG، GIF تا 10 مگابایت</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="border-b border-gray-900/10 pb-12">
+<h2 class="text-base font-semibold leading-7 text-gray-900">اطلاعات شخصی</h2>
+<p class="mt-1 text-sm leading-6 text-gray-600">آدرس دایمی خود را وارد کنید که بتوانید در آنجا نامه دریافت کنید.</p>
+
+<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+  <div class="sm:col-span-3">
+    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">نام</label>
+    <div class="mt-2">
+      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">نام خانوادگی</label>
+    <div class="mt-2">
+      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    </div>
+  </div>
+
+<div class="sm:col-span-4">
+<label for="email" class="block text-sm font-medium leading-6 text-gray-900">آدرس ایمیل</label>
+<div class="mt-2">
+  <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+</div>
+</div>
+
+<div class="sm:col-span-3">
+<label for="country" class="block text-sm font-medium leading-6 text-gray-900">کشور</label>
+<div class="mt-2">
+  <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+    <option>ایالات متحده</option>
+    <option>کانادا</option>
+    <option>مکزیک</option>
+  </select>
+</div>
+</div>
+
+<div class="col-span-full">
+<label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">آدرس خیابان</label>
+<div class="mt-2">
+  <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+</div>
+</div>
+
+<div class="sm:col-span-2 sm:col-start-1">
+<label for="city" class="block text-sm font-medium leading-6 text-gray-900">شهر</label>
+<div class="mt-2">
+  <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+</div>
+</div>
+
+<div class="sm:col-span-2">
+<label for="region" class="block text-sm font-medium leading-6 text-gray-900">استان / ولایت</label>
+<div class="mt-2">
+  <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+</div>
+</div>
+
+<div class="sm:col-span-2">
+<label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">کد پستی</label>
+<div class="mt-2">
+  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+</div>
+</div>
+</div>
+</div>
+
+<div class="border-b border-gray-900/10 pb-12">
+    <h2 class="text-base font-semibold leading-7 text-gray-900">اعلانات</h2>
+    <p class="mt-1 text-sm leading-6 text-gray-600">همیشه اطلاعات مهم را به شما اعلام می‌کنیم، اما شما می‌توانید تصمیم بگیرید که در مورد چه مواردی دیگر می‌خواهید مطلع شوید.</p>
+
+<div class="mt-10 space-y-10">
+  <fieldset>
+    <legend class="text-sm font-semibold leading-6 text-gray-900">توسط ایمیل</legend>
+    <div class="mt-6 space-y-6">
+      <div class="relative flex gap-x-3">
+        <div class="flex h-6 items-center">
+          <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        </div>
+        <div class="text-sm leading-6">
+          <label for="comments" class="font-medium text-gray-900">نظرات</label>
+          <p class="text-gray-500">مطلع شوید هنگامی که کسی نظری را در یک پست ارسال می‌کند.</p>
+        </div>
+      </div>
+      <div class="relative flex gap-x-3">
+        <div class="flex h-6 items-center">
+          <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        </div>
+        <div class="text-sm leading-6">
+          <label for="candidates" class="font-medium text-gray-900">کاندیدها</label>
+          <p class="text-gray-500">مطلع شوید هنگامی که یک کاندید برای یک شغل درخواست می‌دهد.</p>
+        </div>
+      </div>
+      <div class="relative flex gap-x-3">
+        <div class="flex h-6 items-center">
+          <input id="offers" name="offers" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        </div>
+        <div class="text-sm leading-6">
+          <label for="offers" class="font-medium text-gray-900">پیشنهادها</label>
+          <p class="text-gray-500">مطلع شوید هنگامی که یک کاندید پیشنهاد را قبول یا رد می‌کند.</p>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend class="text-sm font-semibold leading-6 text-gray-900">هشدارهای فشاری</legend>
+    <p class="mt-1 text-sm leading-6 text-gray-600">این هشدارها از طریق پیامک به تلفن همراه شما ارسال می‌شوند.</p>
+    <div class="mt-6 space-y-6">
+      <div class="flex items-center gap-x-3">
+        <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        <label for="push-everything" class="block text-sm font-medium leading-6 text-gray-900">همه چیز</label>
+      </div>
+      <div class="flex items-center gap-x-3">
+        <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        <label for="push-email" class="block text-sm font-medium leading-6 text-gray-900">مانند ایمیل</label>
+      </div>
+      <div class="flex items-center gap-x-3">
+        <input id="push-nothing" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        <label for="push-nothing" class="block text-sm font-medium leading-6 text-gray-900">هیچ هشداری فشاری نداشته باشید</label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-end gap-x-6">
+  <button type="button" class="text-sm font-semibold leading-6 text-gray-900">لغو</button>
+  <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">ذخیره</button>
+</div>
+</form>
+
+
+
+                </div>
+                </div>
+                </div>
+
+
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                <script src="inc/js/custom-js.js"></script>
+            
+                <!-- partial -->
+                <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+                <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+            
+                <script src="../inc/js/custom-js.js"></script>
+                
+            </body>
+            
+            </html>
